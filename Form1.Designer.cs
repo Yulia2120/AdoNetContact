@@ -57,11 +57,15 @@
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.textBox20 = new System.Windows.Forms.TextBox();
             this.butCompanyInsert = new System.Windows.Forms.Button();
+            this.tabContacts = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl.SuspendLayout();
             this.tabUsers.SuspendLayout();
             this.tabAddress.SuspendLayout();
             this.tabCar.SuspendLayout();
             this.tabCompany.SuspendLayout();
+            this.tabContacts.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl
@@ -70,6 +74,7 @@
             this.tabControl.Controls.Add(this.tabAddress);
             this.tabControl.Controls.Add(this.tabCar);
             this.tabControl.Controls.Add(this.tabCompany);
+            this.tabControl.Controls.Add(this.tabContacts);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Name = "tabControl";
@@ -321,6 +326,25 @@
             this.butCompanyInsert.UseVisualStyleBackColor = true;
             this.butCompanyInsert.Click += new System.EventHandler(this.butCompanyInsert_Click);
             // 
+            // tabContacts
+            // 
+            this.tabContacts.Controls.Add(this.dataGridView1);
+            this.tabContacts.Location = new System.Drawing.Point(4, 22);
+            this.tabContacts.Name = "tabContacts";
+            this.tabContacts.Size = new System.Drawing.Size(767, 424);
+            this.tabContacts.TabIndex = 4;
+            this.tabContacts.Text = "Contacts";
+            this.tabContacts.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(767, 284);
+            this.dataGridView1.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -339,6 +363,8 @@
             this.tabCar.PerformLayout();
             this.tabCompany.ResumeLayout(false);
             this.tabCompany.PerformLayout();
+            this.tabContacts.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -374,6 +400,8 @@
         private System.Windows.Forms.TextBox textBox20;
         private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.TabPage tabContacts;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 
