@@ -24,7 +24,7 @@ namespace AdoNetContact
         {
             SqlConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["ContactDB"].ConnectionString);
             SqlConnection.Open();
-            //if(SqlConnection != null)
+            //if (SqlConnection != null)
             //{
             //    MessageBox.Show("Подключение установлено!");
             //}
@@ -47,17 +47,39 @@ namespace AdoNetContact
        
         private void butInsertAddress_Click(object sender, EventArgs e)
         {
-            SqlCommand command = new SqlCommand($"INSERT INTO [Address](UserId, Country, City, Street, House, Apartment ) VALUES (@UserId, @Country, @City, @Street, @House, @Apartment )", SqlConnection);
+            //SqlCommand command = new SqlCommand($"INSERT INTO [Address](UserId, Country, City, Street, House, Apartment ) VALUES (@UserId, @Country, @City, @Street, @House, @Apartment )", SqlConnection);
 
-            command.Parameters.AddWithValue("UserId", textBox1.Text);
-            command.Parameters.AddWithValue("Country", textBox2.Text);
-            command.Parameters.AddWithValue("City", textBox3.Text);
-            command.Parameters.AddWithValue("Street", textBox4.Text);
-            command.Parameters.AddWithValue("House", textBox5.Text);
-            command.Parameters.AddWithValue("Apartment ", textBox6.Text);
-            command.ExecuteNonQuery();
-            MessageBox.Show("Inserted");
+            //command.Parameters.AddWithValue("UserId", textBox7.Text);
+            //command.Parameters.AddWithValue("Country", textBox8.Text);
+            //command.Parameters.AddWithValue("City", textBox9.Text);
+            //command.Parameters.AddWithValue("Street", textBox10.Text);
+            //command.Parameters.AddWithValue("House", textBox11.Text);
+            //command.Parameters.AddWithValue("Apartment ", textBox12.Text);
+            //command.ExecuteNonQuery();
+            //MessageBox.Show("Inserted");
 
+        }
+
+        private void butCarInsert_Click(object sender, EventArgs e)
+        {
+            //SqlCommand command = new SqlCommand($"INSERT INTO [Car](UserId, Make, Model, RegNumber ) VALUES (@UserId, @Make, @Model, @RegNumber )", SqlConnection);
+            //command.Parameters.AddWithValue("UserId", textBox13.Text);
+            //command.Parameters.AddWithValue("Make", textBox14.Text);
+            //command.Parameters.AddWithValue("Model", textBox16.Text);
+            //command.Parameters.AddWithValue("RegNumber", textBox17.Text);
+            //command.ExecuteNonQuery();
+            //MessageBox.Show("Inserted");
+        }
+
+        private void butCompanyInsert_Click(object sender, EventArgs e)
+        {
+            //SqlCommand command = new SqlCommand($"INSERT INTO [Company](UserId, CompanyName, Post) VALUES (@UserId, @CompanyName, @Post)", SqlConnection);
+            //command.Parameters.AddWithValue("UserId", textBox18.Text);
+            //command.Parameters.AddWithValue("CompanyName", textBox19.Text);
+            //command.Parameters.AddWithValue("Post", textBox20.Text);
+           // SqlCommand command = new SqlCommand($"UPDATE [Company] SET UserId = 8 WHERE Id = 8", SqlConnection);
+            //command.ExecuteNonQuery();
+            //MessageBox.Show("Inserted");
         }
     }
 }
