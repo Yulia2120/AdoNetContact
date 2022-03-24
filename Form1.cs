@@ -131,7 +131,13 @@ namespace AdoNetContact
             adapter.Fill(db);
             dataGridView2.DataSource = db.Tables[0];
         }
-        //SqlConnection.Close();
+
+        private void butUsersUpdate_Click(object sender, EventArgs e)
+        {
+            SqlCommand command = new SqlCommand($"UPDATE [Company] SET UserId = 8 WHERE Id = 8", SqlConnection);
+            command.ExecuteNonQuery();
+            MessageBox.Show("Updated");
+        }
     }
 
 }

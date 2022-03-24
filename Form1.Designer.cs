@@ -30,7 +30,7 @@
         {
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabUsers = new System.Windows.Forms.TabPage();
-            this.butUsersFind = new System.Windows.Forms.Button();
+            this.butUsersUpdate = new System.Windows.Forms.Button();
             this.butUsersDel = new System.Windows.Forms.Button();
             this.butInsert = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -103,7 +103,7 @@
             // 
             // tabUsers
             // 
-            this.tabUsers.Controls.Add(this.butUsersFind);
+            this.tabUsers.Controls.Add(this.butUsersUpdate);
             this.tabUsers.Controls.Add(this.butUsersDel);
             this.tabUsers.Controls.Add(this.butInsert);
             this.tabUsers.Controls.Add(this.textBox6);
@@ -120,16 +120,17 @@
             this.tabUsers.Text = "Users";
             this.tabUsers.UseVisualStyleBackColor = true;
             // 
-            // butUsersFind
+            // butUsersUpdate
             // 
-            this.butUsersFind.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.butUsersFind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.butUsersFind.Location = new System.Drawing.Point(665, 110);
-            this.butUsersFind.Name = "butUsersFind";
-            this.butUsersFind.Size = new System.Drawing.Size(94, 23);
-            this.butUsersFind.TabIndex = 3;
-            this.butUsersFind.Text = "FIND";
-            this.butUsersFind.UseVisualStyleBackColor = false;
+            this.butUsersUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.butUsersUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.butUsersUpdate.Location = new System.Drawing.Point(665, 110);
+            this.butUsersUpdate.Name = "butUsersUpdate";
+            this.butUsersUpdate.Size = new System.Drawing.Size(94, 23);
+            this.butUsersUpdate.TabIndex = 3;
+            this.butUsersUpdate.Text = "UPDATE";
+            this.butUsersUpdate.UseVisualStyleBackColor = false;
+            this.butUsersUpdate.Click += new System.EventHandler(this.butUsersUpdate_Click);
             // 
             // butUsersDel
             // 
@@ -603,7 +604,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button butGridViewFindAll;
         private System.Windows.Forms.Button butUsersDel;
-        private System.Windows.Forms.Button butUsersFind;
+        private System.Windows.Forms.Button butUsersUpdate;
         private System.Windows.Forms.Label labelSortFN;
         private System.Windows.Forms.TextBox textBoxSortFN;
         private System.Windows.Forms.TextBox textBoxSortSN;
