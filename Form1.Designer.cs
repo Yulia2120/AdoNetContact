@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl = new System.Windows.Forms.TabControl();
             this.tabUsers = new System.Windows.Forms.TabPage();
             this.butUsersUpdate = new System.Windows.Forms.Button();
@@ -98,7 +99,7 @@
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(775, 642);
+            this.tabControl.Size = new System.Drawing.Size(774, 641);
             this.tabControl.TabIndex = 0;
             // 
             // tabUsers
@@ -115,14 +116,14 @@
             this.tabUsers.Location = new System.Drawing.Point(4, 22);
             this.tabUsers.Name = "tabUsers";
             this.tabUsers.Padding = new System.Windows.Forms.Padding(3);
-            this.tabUsers.Size = new System.Drawing.Size(767, 616);
+            this.tabUsers.Size = new System.Drawing.Size(766, 615);
             this.tabUsers.TabIndex = 0;
             this.tabUsers.Text = "Users";
             this.tabUsers.UseVisualStyleBackColor = true;
             // 
             // butUsersUpdate
             // 
-            this.butUsersUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.butUsersUpdate.BackColor = System.Drawing.Color.LightSkyBlue;
             this.butUsersUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.butUsersUpdate.Location = new System.Drawing.Point(665, 110);
             this.butUsersUpdate.Name = "butUsersUpdate";
@@ -134,7 +135,7 @@
             // 
             // butUsersDel
             // 
-            this.butUsersDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.butUsersDel.BackColor = System.Drawing.Color.LightSkyBlue;
             this.butUsersDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.butUsersDel.Location = new System.Drawing.Point(665, 71);
             this.butUsersDel.Name = "butUsersDel";
@@ -146,7 +147,7 @@
             // 
             // butInsert
             // 
-            this.butInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.butInsert.BackColor = System.Drawing.Color.LightSkyBlue;
             this.butInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.butInsert.Location = new System.Drawing.Point(665, 32);
             this.butInsert.Name = "butInsert";
@@ -210,14 +211,14 @@
             this.tabAddress.Location = new System.Drawing.Point(4, 22);
             this.tabAddress.Name = "tabAddress";
             this.tabAddress.Padding = new System.Windows.Forms.Padding(3);
-            this.tabAddress.Size = new System.Drawing.Size(767, 616);
+            this.tabAddress.Size = new System.Drawing.Size(766, 615);
             this.tabAddress.TabIndex = 1;
             this.tabAddress.Text = "Address";
             this.tabAddress.UseVisualStyleBackColor = true;
             // 
             // butInsertAddress
             // 
-            this.butInsertAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.butInsertAddress.BackColor = System.Drawing.Color.LightSkyBlue;
             this.butInsertAddress.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.butInsertAddress.Location = new System.Drawing.Point(665, 32);
             this.butInsertAddress.Name = "butInsertAddress";
@@ -279,7 +280,7 @@
             this.tabCar.Controls.Add(this.textBox13);
             this.tabCar.Location = new System.Drawing.Point(4, 22);
             this.tabCar.Name = "tabCar";
-            this.tabCar.Size = new System.Drawing.Size(767, 616);
+            this.tabCar.Size = new System.Drawing.Size(766, 615);
             this.tabCar.TabIndex = 2;
             this.tabCar.Text = "Car";
             this.tabCar.UseVisualStyleBackColor = true;
@@ -293,7 +294,7 @@
             // 
             // butCarInsert
             // 
-            this.butCarInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.butCarInsert.BackColor = System.Drawing.Color.LightSkyBlue;
             this.butCarInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.butCarInsert.Location = new System.Drawing.Point(547, 51);
             this.butCarInsert.Name = "butCarInsert";
@@ -339,14 +340,14 @@
             this.tabCompany.Controls.Add(this.textBox18);
             this.tabCompany.Location = new System.Drawing.Point(4, 22);
             this.tabCompany.Name = "tabCompany";
-            this.tabCompany.Size = new System.Drawing.Size(767, 616);
+            this.tabCompany.Size = new System.Drawing.Size(766, 615);
             this.tabCompany.TabIndex = 3;
             this.tabCompany.Text = "Company";
             this.tabCompany.UseVisualStyleBackColor = true;
             // 
             // butCompanyInsert
             // 
-            this.butCompanyInsert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.butCompanyInsert.BackColor = System.Drawing.Color.LightSkyBlue;
             this.butCompanyInsert.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.butCompanyInsert.Location = new System.Drawing.Point(490, 44);
             this.butCompanyInsert.Name = "butCompanyInsert";
@@ -393,7 +394,7 @@
             this.tabAllInfo.Controls.Add(this.dataGridView1);
             this.tabAllInfo.Location = new System.Drawing.Point(4, 22);
             this.tabAllInfo.Name = "tabAllInfo";
-            this.tabAllInfo.Size = new System.Drawing.Size(767, 616);
+            this.tabAllInfo.Size = new System.Drawing.Size(766, 615);
             this.tabAllInfo.TabIndex = 4;
             this.tabAllInfo.Text = "AllInfo";
             this.tabAllInfo.UseVisualStyleBackColor = true;
@@ -453,7 +454,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(767, 284);
+            this.dataGridView1.Size = new System.Drawing.Size(766, 284);
             this.dataGridView1.TabIndex = 0;
             // 
             // labelSortLN
@@ -513,7 +514,7 @@
             this.tabCont.Controls.Add(this.dataGridView2);
             this.tabCont.Location = new System.Drawing.Point(4, 22);
             this.tabCont.Name = "tabCont";
-            this.tabCont.Size = new System.Drawing.Size(767, 616);
+            this.tabCont.Size = new System.Drawing.Size(766, 615);
             this.tabCont.TabIndex = 5;
             this.tabCont.Text = "Contacts";
             this.tabCont.UseVisualStyleBackColor = true;
@@ -526,19 +527,20 @@
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView2.Location = new System.Drawing.Point(0, 0);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(767, 291);
+            this.dataGridView2.Size = new System.Drawing.Size(766, 291);
             this.dataGridView2.TabIndex = 0;
             // 
             // butContactList
             // 
-            this.butContactList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.butContactList.BackColor = System.Drawing.Color.LightSkyBlue;
             this.butContactList.FlatAppearance.BorderColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.butContactList.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.butContactList.Location = new System.Drawing.Point(655, 352);
+            this.butContactList.ForeColor = System.Drawing.Color.Black;
+            this.butContactList.Location = new System.Drawing.Point(618, 352);
             this.butContactList.Name = "butContactList";
-            this.butContactList.Size = new System.Drawing.Size(75, 23);
+            this.butContactList.Size = new System.Drawing.Size(112, 23);
             this.butContactList.TabIndex = 1;
-            this.butContactList.Text = "ContactList";
+            this.butContactList.Text = "CONTACTLIST";
             this.butContactList.UseVisualStyleBackColor = false;
             this.butContactList.Click += new System.EventHandler(this.butContactList_Click);
             // 
@@ -546,10 +548,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 642);
+            this.ClientSize = new System.Drawing.Size(774, 641);
             this.Controls.Add(this.tabControl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Contacts";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl.ResumeLayout(false);
             this.tabUsers.ResumeLayout(false);
