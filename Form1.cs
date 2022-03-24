@@ -138,6 +138,8 @@ namespace AdoNetContact
             command.ExecuteNonQuery();
             MessageBox.Show("Updated");
         }
+
+        
     }
 
 }
