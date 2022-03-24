@@ -46,19 +46,20 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.tabCar = new System.Windows.Forms.TabPage();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.butCarInsert = new System.Windows.Forms.Button();
             this.textBox17 = new System.Windows.Forms.TextBox();
+            this.butCarInsert = new System.Windows.Forms.Button();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.tabCompany = new System.Windows.Forms.TabPage();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
             this.butCompanyInsert = new System.Windows.Forms.Button();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
             this.tabContacts = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.butGridViewFind = new System.Windows.Forms.Button();
             this.tabControl.SuspendLayout();
             this.tabUsers.SuspendLayout();
             this.tabAddress.SuspendLayout();
@@ -237,33 +238,12 @@
             this.tabCar.Text = "Car";
             this.tabCar.UseVisualStyleBackColor = true;
             // 
-            // textBox13
+            // textBox17
             // 
-            this.textBox13.Location = new System.Drawing.Point(43, 51);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 0;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(157, 51);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 0;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(267, 51);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 0;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(267, 51);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(104, 20);
-            this.textBox16.TabIndex = 0;
+            this.textBox17.Location = new System.Drawing.Point(385, 51);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(100, 20);
+            this.textBox17.TabIndex = 2;
             // 
             // butCarInsert
             // 
@@ -275,12 +255,33 @@
             this.butCarInsert.UseVisualStyleBackColor = true;
             this.butCarInsert.Click += new System.EventHandler(this.butCarInsert_Click);
             // 
-            // textBox17
+            // textBox16
             // 
-            this.textBox17.Location = new System.Drawing.Point(385, 51);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 20);
-            this.textBox17.TabIndex = 2;
+            this.textBox16.Location = new System.Drawing.Point(267, 51);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(104, 20);
+            this.textBox16.TabIndex = 0;
+            // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(267, 51);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(100, 20);
+            this.textBox15.TabIndex = 0;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(157, 51);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(100, 20);
+            this.textBox14.TabIndex = 0;
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(43, 51);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(100, 20);
+            this.textBox13.TabIndex = 0;
             // 
             // tabCompany
             // 
@@ -295,27 +296,6 @@
             this.tabCompany.Text = "Company";
             this.tabCompany.UseVisualStyleBackColor = true;
             // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(43, 44);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(100, 20);
-            this.textBox18.TabIndex = 0;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(154, 44);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(100, 20);
-            this.textBox19.TabIndex = 0;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(265, 44);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(100, 20);
-            this.textBox20.TabIndex = 0;
-            // 
             // butCompanyInsert
             // 
             this.butCompanyInsert.Location = new System.Drawing.Point(490, 44);
@@ -326,8 +306,30 @@
             this.butCompanyInsert.UseVisualStyleBackColor = true;
             this.butCompanyInsert.Click += new System.EventHandler(this.butCompanyInsert_Click);
             // 
+            // textBox20
+            // 
+            this.textBox20.Location = new System.Drawing.Point(265, 44);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(100, 20);
+            this.textBox20.TabIndex = 0;
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(154, 44);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(100, 20);
+            this.textBox19.TabIndex = 0;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Location = new System.Drawing.Point(43, 44);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(100, 20);
+            this.textBox18.TabIndex = 0;
+            // 
             // tabContacts
             // 
+            this.tabContacts.Controls.Add(this.butGridViewFind);
             this.tabContacts.Controls.Add(this.dataGridView1);
             this.tabContacts.Location = new System.Drawing.Point(4, 22);
             this.tabContacts.Name = "tabContacts";
@@ -338,12 +340,24 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(767, 284);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // butGridViewFind
+            // 
+            this.butGridViewFind.Location = new System.Drawing.Point(649, 316);
+            this.butGridViewFind.Name = "butGridViewFind";
+            this.butGridViewFind.Size = new System.Drawing.Size(75, 23);
+            this.butGridViewFind.TabIndex = 1;
+            this.butGridViewFind.Text = "Find";
+            this.butGridViewFind.UseVisualStyleBackColor = true;
+            this.butGridViewFind.Click += new System.EventHandler(this.butGridViewFind_Click);
             // 
             // Form1
             // 
@@ -402,6 +416,7 @@
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.TabPage tabContacts;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button butGridViewFind;
     }
 }
 

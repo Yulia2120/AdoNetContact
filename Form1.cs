@@ -81,5 +81,16 @@ namespace AdoNetContact
             //command.ExecuteNonQuery();
             //MessageBox.Show("Inserted");
         }
+
+        private void butGridViewFind_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT U.*, A.Country as Country, A.City as City, A.Street as Street, A.House as House, A.Apartment as Apartment, C.Make as Make, C.Model as Model, C.RegNumber as RegNumber, Co.CompanyName as CompanyName, Co.Post as Post FROM Users as U JOIN Address as A ON UserId = U.Id JOIN Car as C ON C.UserId = U.Id JOIN Company as Co ON Co.UserId = U.Id";
+            SqlDataAdapter adapter = new SqlDataAdapter(query, SqlConnection);
+            DataSet db = new DataSet();
+            adapter.Fill(db);
+            dataGridView1.DataSource = db.Tables[0];
+        }
+      
     }
+   
 }
