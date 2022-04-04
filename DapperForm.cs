@@ -39,6 +39,7 @@ namespace AdoNetContact
             butSave.Enabled = value;
             butDelete.Enabled = value;
         }
+        UsersEnumClass operation = UsersEnumClass.Add;
         private void butAdd_Click(object sender, EventArgs e)
         {
 
