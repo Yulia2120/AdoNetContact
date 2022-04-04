@@ -15,6 +15,9 @@ namespace AdoNetContact
         public DapperForm()
         {
             InitializeComponent();
+           usersBindingSource.DataSource = GetUsersClassData.GetUsers();
         }
+
+       
     }
 }
