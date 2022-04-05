@@ -17,10 +17,67 @@ namespace AdoNetContact
             {
                 if (db.State == ConnectionState.Closed)
                     db.Open();
-                return db.Query<Users>("sp_Users", commandType:CommandType.StoredProcedure).ToList();
+                return db.Query<Users>("sp_Users", new { @id1 = 1 }, commandType: CommandType.StoredProcedure).ToList();
             }
         }
+        public static int Insert(Users obj)
+        {
+            using (IDbConnection db = new SqlConnection(SqlConnectionClass.ConnectionString))
+            {
+                if (db.State == ConnectionState.Closed)
+                    db.Open();
+                DynamicParameters para = new DynamicParameters();
+                para.AddDynamicParams
+                    (
+                    new
+                    {
+                        id1 = 2,
+                        FirstName = obj.FirstName,
+                        SurName = obj.SurName,
+                        LastName = obj.LastName,
+                        Birthday = obj.Birthday,
+                        Phone = obj.Phone,
+                        DataAdded = obj.DataAdded
+                    });
+                return db.Execute("sp_Users", para, commandType: CommandType.StoredProcedure);
+            }
+        }
+        public static int Update(Users obj)
+        {
+            using (IDbConnection db = new SqlConnection(SqlConnectionClass.ConnectionString))
+            {
+                if (db.State == ConnectionState.Closed)
+                    db.Open();
+                return db.Execute("sp_Users", new
+                {
+                    id1 = 3,
+                    Id = obj.Id,
+                    FirstName = obj.FirstName,
+                    SurName = obj.SurName,
+                    LastName = obj.LastName,
+                    Birthday = obj.Birthday,
+                    Phone = obj.Phone,
+                    DataAdded = obj.DataAdded
+                },
+                    commandType: CommandType.StoredProcedure);
+            }
+        }
+            public static int Delete(Users obj)
+            {
+                using (IDbConnection db = new SqlConnection(SqlConnectionClass.ConnectionString))
+                {
+                    if (db.State == ConnectionState.Closed)
+                        db.Open();
+                    return db.Execute("sp_Users", new
+                    {
+                        id1 = 4,
+                        Id = obj.Id
+                    },
+                        commandType: CommandType.StoredProcedure);
+                }
 
 
-    }
+
+            }
+        }
 }
